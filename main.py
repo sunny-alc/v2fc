@@ -78,9 +78,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     try:
         msg = main(args.username,args.password)
+        print(msg)
     except Exception as e:
-        print("${args.username}签到失败")
+        print("签到失败")
         print(e)
-    print(msg)
+
     # send(info=msg,mail=[args.semail,args.secode],receivers=args.remail)
 
